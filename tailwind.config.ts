@@ -21,6 +21,9 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
+      boxShadow: {
+        appointmentForm: '0px 0px 30px 0px rgba(2, 29, 53, 0.08)'
+      },
       borderColor: {
         outline: '#D8DDE1'
       },

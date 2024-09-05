@@ -10,3 +10,6 @@ export function toMaxNumber(num: number, limit: 9 | 99 | 999): string {
   else if (num > limit) return `${limit}+`
   else return ''
 }
+
+export const formatNumber: (number: number) => string = number =>
+  Math.abs(number) < 10 ? (number >= 0 ? '0' : '-0') + Math.abs(number) : number.toString()

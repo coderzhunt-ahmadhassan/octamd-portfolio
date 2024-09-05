@@ -1,8 +1,6 @@
-import { LandingPageHeader } from '@/components/Headers'
 import { AboutUsSection } from '@/components/AboutUs'
+import { Appointments, ExtraServices, WhyChoseUs, WorkProcess } from '@/components/LandingPage'
 import { Services } from '@/components/Services'
-import Image from 'next/image'
-import { WhyChoseUs } from '@/components/LandingPage'
 
 export default function Home() {
   return (
@@ -11,6 +9,9 @@ export default function Home() {
       <Services />
       <AboutUsSection />
       <WhyChoseUs />
+      <ExtraServices />
+      <WorkProcess />
+      <Appointments />
     </main>
   )
 }

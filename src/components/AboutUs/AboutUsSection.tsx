@@ -77,28 +77,28 @@ export const AboutUsSection = (props: Props) => {
             />
 
             <div className='mt-[56px] flex-1 border-themeTertiary grid grid-cols-2 overflow-hidden border-2 rounded-[30px]'>
-              <div className='border-r-2 border-b-2 border-themeTertiary flex__center flex-col p-[40px]'>
+              <div className='border-r-2 border-b-2 border-themeTertiary flex__center flex-col p-10'>
                 <p className='font_64_700 leading-[52px]'>
                   <span className='text-titleColor'>9k</span>
                   <span className='text-themePrimary'>+</span>
                 </p>
                 <p className='urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
               </div>
-              <div className='border-b-2 border-themeTertiary flex__center flex-col p-[40px]'>
+              <div className='border-b-2 border-themeTertiary flex__center flex-col p-10'>
                 <p className='font_64_700 leading-[52px]'>
                   <span className='text-titleColor'>9k</span>
                   <span className='text-themePrimary'>+</span>
                 </p>
                 <p className='urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
               </div>
-              <div className='border-r-2 border-themeTertiary flex__center flex-col p-[40px]'>
+              <div className='border-r-2 border-themeTertiary flex__center flex-col p-10'>
                 <p className='font_64_700 leading-[52px]'>
                   <span className='text-titleColor'>9k</span>
                   <span className='text-themePrimary'>+</span>
                 </p>
                 <p className='urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
               </div>
-              <div className='flex__center flex-col p-[40px]'>
+              <div className='flex__center flex-col p-10'>
                 <p className='font_64_700 leading-[52px]'>
                   <span className='text-titleColor'>9k</span>
                   <span className='text-themePrimary'>+</span>

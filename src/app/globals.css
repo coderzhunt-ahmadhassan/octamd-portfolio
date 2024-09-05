@@ -18,6 +18,19 @@
   }
 }
 
+@layer components {
+  .hide-date-icon::-webkit-calendar-picker-indicator,
+  .hide-time-icon::-webkit-calendar-picker-indicator,
+  .hide-date-time-icon::-webkit-calendar-picker-indicator {
+    @apply hidden;
+  }
+
+  .hide-time-icon::-webkit-time-picker-indicator,
+  .hide-date-time-icon::-webkit-time-picker-indicator {
+    @apply hidden;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -41,7 +54,7 @@
     @apply text-[36px] leading-[46px];
   }
   .heading5 {
-    @apply text-[30px] leading-[40px];
+    @apply text-[30px] leading-10;
   }
   .heading6 {
     @apply text-[24px] leading-[34px];
@@ -63,6 +76,9 @@
   }
   .innerContainer {
     @apply w-full max-w-[1224px] mx-auto;
+  }
+  .appointmentContainer {
+    @apply w-full max-w-[1284px] mx-auto;
   }
   .outerContainer {
     @apply w-full max-w-[1920px] px-6 lg:px-[50px] mx-auto;
@@ -91,9 +107,17 @@
     font-size: 14px;
     font-weight: 400;
   }
+  .font_14_700 {
+    font-size: 14px;
+    font-weight: 700;
+  }
   .font_16_400 {
     font-size: 16px;
     font-weight: 400;
+  }
+  .font_16_500 {
+    font-size: 16px;
+    font-weight: 500;
   }
   .font_16_700 {
     font-size: 16px;
@@ -107,8 +131,16 @@
     font-size: 18px;
     font-weight: 600;
   }
+  .font_20_700 {
+    font-size: 20px;
+    font-weight: 700;
+  }
   .font_24_700 {
     font-size: 24px;
+    font-weight: 700;
+  }
+  .font_30_700 {
+    font-size: 30px;
     font-weight: 700;
   }
   .font_36_700 {

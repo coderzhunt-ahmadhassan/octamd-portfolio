@@ -88,6 +88,7 @@ export const ServiceSlider = ({ currentCard, setCurrentCard }: Props) => {
                   : 'bg-white'
               } flex flex-1 shadow-md smooth__show flex-col overflow-hidden`}
               onClick={() => setCurrentCard(idx)}
+              key={idx}
             >
               <div className='border-b-[3px] w-full'>
                 <div className='w-full md:w-[184px] flex__center mx-auto md:mx-0 h-[130px]'>

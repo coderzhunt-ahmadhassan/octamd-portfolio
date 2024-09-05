@@ -21,7 +21,7 @@ export const WhyChoseUs = (props: Props) => {
       <div className='outerContainer pt-[120px] pb-[126px]'>
         <div className='innerContainer flex flex-col'>
           <SectionTitle className='mx-auto' image={ServicesIcon} title='Why Choose Us' />
-          <h2 className='urbanist font_48_700 max-w-[45rem] mx-auto text-center mt-[30px]'>
+          <h2 className='urbanist font_48_700 max-w-[45rem] mx-auto text-center mt-[15px]'>
             We’re Passionate, Dedicated And Friendly...
           </h2>
           <WhyChoseUsTabs />

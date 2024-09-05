@@ -20,10 +20,10 @@ export const AnimatedCartoonImageBg = ({
     <Image
       className={twMerge(
         'absolute -z-[1] hidden 3xl:block pointer-events-none',
-        position === 'top left' && 'top-[220px] left-[109px]',
-        position === 'top right' && 'top-[220px] right-[109px]',
-        position === 'bottom left' && 'bottom-[220px] left-[109px]',
-        position === 'bottom right' && 'bottom-[220px] right-[109px]'
+        position === 'top left' && 'top-[220px] left-[30px]',
+        position === 'top right' && 'top-[220px] right-[30px]',
+        position === 'bottom left' && 'bottom-[220px] left-[30px]',
+        position === 'bottom right' && 'bottom-[220px] right-[30px]'
       )}
       src={image}
       alt={alt}

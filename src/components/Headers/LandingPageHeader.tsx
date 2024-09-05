@@ -106,7 +106,7 @@ const NavList: { title: string; link: string }[] = [
 export const LandingPageHeader = (props: Props) => {
   return (
     <HeaderWrapper type='landingPage'>
-      <div className='h-[150px] shadow-lg flex rounded-b-[40px] overflow-hidden'>
+      <div className='h-[150px] shadow-lg flex rounded-b-10 overflow-hidden'>
         <LandingPageHeaderLogo />
         <div className='flex flex-1 flex-col'>
           <TopSocialNav className='sm:hidden xl:flex' />
@@ -198,7 +198,7 @@ const MainNav = () => {
 
   return (
     <nav className='flex__center px-[30px] flex-1'>
-      <ul className='flex gap-[40px] mr-auto text-titleColor'>
+      <ul className='flex gap-10 mr-auto text-titleColor'>
         {NavList.map((nav, idx) => (
           <li
             key={idx}
