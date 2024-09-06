@@ -19,6 +19,7 @@ const buttonVariants = cva(
           'bg-white border border-outline text-titleColor uppercase rounded-full aspect-square',
         dark: 'bg-titleColor text-white shadow hover:bg-titleColor/80 border border-titleColor',
         outline: 'bg-white text-white shadow hover:bg-white/80 border border-outline',
+        dot: 'bg-[#D8DDE1] [&.active]:bg-themePrimary rounded-[100%] h-3 w-3 aspect-square [&.active]:ring-1 [&.active]:ring-offset-4 [&.active]:ring-themePrimary',
         link: 'bg-themePrimary text-white shadow hover:bg-themePrimary/80 border-none underline underline-offset-2'
       },
       size: {

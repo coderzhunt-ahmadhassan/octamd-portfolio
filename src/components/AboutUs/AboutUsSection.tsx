@@ -37,10 +37,11 @@ export const AboutUsSection = (props: Props) => {
       <div className='outerContainer pt-[120px] pb-[105px]'>
         <div className='innerContainer flex gap-[80px] flex-wrap'>
           <div className='flex flex-col basis-96 flex-1'>
-            <SectionTitle image={ServicesIcon} title='About Us Company' />
-            <h2 className='urbanist font_48_700 text-center mt-[30px] lg:text-left'>
-              Your Great Smile Begins With a Great Dentist
-            </h2>
+            <SectionTitle
+              image={ServicesIcon}
+              title='About Us Company'
+              heading={{ title: 'Your Great Smile Begins With a Great Dentist' }}
+            />
             <ul className='my-12 grid grid-cols-2 gap-5'>
               <li className='flex__center gap-[10px]'>
                 <Image src={GreenTooth} alt='green tooth' height={21} width={21} />

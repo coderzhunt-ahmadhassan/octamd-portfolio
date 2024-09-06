@@ -19,9 +19,12 @@ const timings: string[][] = [
 
 export const Appointments = (props: Props) => {
   return (
-    <SectionWrapper className='py-6' innerContainerClassName='appointmentContainer flex gap-[30px]'>
-      <div className='flex justify-end relative z-10 py-10 w-[430px]'>
-        <div className='rounded-[20px] absolute top-0 left-0 w-[292px] h-full -z-[1] border-[3px] border-[#D8DDE1]'>
+    <SectionWrapper
+      className='py-6'
+      innerContainerClassName='appointmentContainer flex flex-col xl:flex-row gap-[30px]'
+    >
+      <div className='flex justify-center xl:justify-end relative z-10 py-10 px-0 md:px-10 xl:px-0 w-full xl:w-[430px]'>
+        <div className='rounded-[20px] absolute top-0 left-0 w-full xl:w-[292px] h-4/5 xl:h-full -z-[1] border-[3px] border-[#D8DDE1]'>
           <Image
             className='absolute top-4 left-4'
             src={appointment_dotted_bg}
@@ -30,7 +33,7 @@ export const Appointments = (props: Props) => {
             width={116}
           />
         </div>
-        <div className='bg-themeSecondary rounded-[20px] w-full max-w-[370px] px-[30px] py-10 text-white'>
+        <div className='bg-themeSecondary rounded-[20px] w-full max-w-none xl:max-w-[370px] px-4 md:px-[30px] py-10 text-white'>
           <h4 className='urbanist font_30_700'>Working Hours</h4>
           <p className='urbanist font_16_400 opacity-80 mt-8 mb-[14px]'>
             Variations of passages amt available are anything embarrassing.
@@ -50,17 +53,17 @@ export const Appointments = (props: Props) => {
           </ul>
         </div>
       </div>
-      <div className='flex-1 rounded-[20px] shadow-appointmentForm p-10 flex gap-10'>
+      <div className='flex-1 rounded-[20px] flex-col xl:flex-row shadow-appointmentForm p-5 md:p-10 flex gap-10'>
         <div className='flex flex-1 flex-col gap-10'>
           <Image
-            className='flex-1 object-cover rounded-[10px]'
+            className='flex-1 object-cover w-full rounded-[10px]'
             src={appointment_docs1}
             height={660}
             width={990}
             alt='doctors'
           />
           <Image
-            className='flex-1 object-cover rounded-[10px]'
+            className='flex-1 object-cover w-full rounded-[10px]'
             src={appointment_docs2}
             height={660}
             width={990}
@@ -107,7 +110,7 @@ export const Appointments = (props: Props) => {
               }
             />
             <InputField
-              className='col-span-1 rounded-full bg-[#F0F1F5]'
+              className='col-span-2 md:col-span-1 rounded-full bg-[#F0F1F5]'
               inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
               type='date'
               placeholder='Date'
@@ -116,7 +119,7 @@ export const Appointments = (props: Props) => {
               }
             />
             <InputField
-              className='col-span-1 rounded-full bg-[#F0F1F5]'
+              className='col-span-2 md:col-span-1 rounded-full bg-[#F0F1F5]'
               inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
               type='time'
               placeholder='Time'

@@ -1,5 +1,15 @@
 import { AboutUsSection } from '@/components/AboutUs'
-import { Appointments, ExtraServices, WhyChoseUs, WorkProcess } from '@/components/LandingPage'
+import { CommonFooter } from '@/components/Footers'
+import {
+  Appointments,
+  Blogs,
+  Cta,
+  ExtraServices,
+  FAQs,
+  Testimonials,
+  WhyChoseUs,
+  WorkProcess
+} from '@/components/LandingPage'
 import { Services } from '@/components/Services'
 
 export default function Home() {
@@ -12,6 +22,11 @@ export default function Home() {
       <ExtraServices />
       <WorkProcess />
       <Appointments />
+      <Testimonials />
+      <FAQs />
+      <Cta />
+      <Blogs />
+      <CommonFooter />
     </main>
   )
 }

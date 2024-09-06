@@ -38,11 +38,15 @@ export const Services = (props: Props) => {
           }}
         />
         <div className='relative z-20 innerContainer bg-transparent flex'>
-          <div className='flex flex-col gap-[30px] mx-auto lg:mx-0'>
-            <SectionTitle image={ServicesIcon} title='our services' />
-            <h2 className='urbanist font_48_700 text-center lg:text-left'>
-              Best Dental Service For You
-            </h2>
+          <div className='flex flex-col mx-auto lg:mx-0'>
+            <SectionTitle
+              image={ServicesIcon}
+              title='our services'
+              heading={{
+                title: 'Best Dental Service For You',
+                className: '!text-center !lg:text-left'
+              }}
+            />
           </div>
           <div className='justify-center items-center hidden xl:flex ml-auto gap-[15px]'>
             <Button

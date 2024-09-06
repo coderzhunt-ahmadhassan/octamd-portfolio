@@ -89,70 +89,55 @@
   .smooth__show {
     @apply relative top-0 left-0 pointer-events-auto opacity-100;
   }
-
   .urbanist {
-    font-family: 'Urbanist', sans-serif;
-    font-style: normal;
+    @apply !font-['Urbanist',sans-serif];
   }
   .dmSans {
-    font-family: 'DM Sans', sans-serif;
-    font-style: normal;
+    @apply !font-['DM_Sans',sans-serif];
   }
   .outfit {
-    font-family: 'Outfit', sans-serif;
-    font-style: normal;
+    @apply !font-['Outfit',sans-serif];
   }
-
   .font_14_400 {
-    font-size: 14px;
-    font-weight: 400;
+    @apply text-sm font-normal;
   }
   .font_14_700 {
-    font-size: 14px;
-    font-weight: 700;
+    @apply text-sm font-bold;
   }
   .font_16_400 {
-    font-size: 16px;
-    font-weight: 400;
+    @apply text-[16px] font-normal;
   }
   .font_16_500 {
-    font-size: 16px;
-    font-weight: 500;
+    @apply text-[16px] font-medium;
   }
   .font_16_700 {
-    font-size: 16px;
-    font-weight: 700;
+    @apply text-[16px] font-bold;
   }
   .font_18_500 {
-    font-size: 18px;
-    font-weight: 500;
+    @apply text-[18px] font-medium;
   }
   .font_18_600 {
-    font-size: 18px;
-    font-weight: 600;
+    @apply text-[18px] font-semibold;
   }
   .font_20_700 {
-    font-size: 20px;
-    font-weight: 700;
+    @apply text-[20px] font-bold;
+  }
+  .font_24_500 {
+    @apply text-[24px] font-medium;
   }
   .font_24_700 {
-    font-size: 24px;
-    font-weight: 700;
+    @apply text-[24px] font-bold;
   }
   .font_30_700 {
-    font-size: 30px;
-    font-weight: 700;
+    @apply text-[30px] font-bold;
   }
   .font_36_700 {
-    font-size: 36px;
-    font-weight: 700;
+    @apply text-[36px] font-bold;
   }
   .font_48_700 {
-    font-size: 48px;
-    font-weight: 700;
+    @apply text-[48px] font-bold;
   }
   .font_64_700 {
-    font-size: 64px;
-    font-weight: 700;
+    @apply text-[64px] font-bold;
   }
 }
