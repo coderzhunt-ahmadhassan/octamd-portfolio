@@ -13,7 +13,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body>
+        <div className='z-[1] relative'>{children}</div>
+        <div id='modal-level-1' className='z-[2] relative' />
+        <div id='modal-level-2' className='z-[3] relative' />
+        <div id='modal-level-3' className='z-[4] relative' />
+        <div id='modal-level-4' className='z-[5] relative' />
+        <div id='modal-level-5' className='z-[6] relative' />
+      </body>
     </html>
   )
 }

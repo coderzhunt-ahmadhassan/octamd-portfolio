@@ -7,6 +7,7 @@ type Props = {
   outerContainerClassName?: HTMLAttributes<HTMLDivElement>['className']
   innerContainerClassName?: HTMLAttributes<HTMLDivElement>['className']
   bgProps?: ReactNode
+  containerBgProps?: ReactNode
 }
 
 export const SectionWrapper = ({
@@ -14,12 +15,14 @@ export const SectionWrapper = ({
   className,
   outerContainerClassName,
   innerContainerClassName,
-  bgProps
+  bgProps,
+  containerBgProps
 }: Props) => {
   return (
     <section className={twMerge('z-10 relative', className)}>
       {bgProps}
-      <div className={twMerge('outerContainer', outerContainerClassName)}>
+      <div className={twMerge('outerContainer relative', outerContainerClassName)}>
+        {containerBgProps}
         <div className={twMerge('innerContainer', innerContainerClassName)}>{children}</div>
       </div>
     </section>

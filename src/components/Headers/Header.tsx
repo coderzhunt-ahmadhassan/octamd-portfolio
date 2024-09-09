@@ -1,4 +1,4 @@
-import { LandingPageHeaderLogo } from '@/components/Logos'
+import { HeaderLogo, LandingPageHeaderLogo } from '@/components/Logos'
 import HeaderWrapper from './HeaderWrapper'
 import {
   PhoneNumber,
@@ -104,11 +104,10 @@ const NavList: { title: string; link: string }[] = [
   }
 ]
 
-export const LandingPageHeader = (props: Props) => {
+export const Header = (props: Props) => {
   return (
-    <HeaderWrapper type='landingPage'>
-      <div className='h-[150px] shadow-lg flex bg-white [&_*]:whitespace-nowrap rounded-none md:rounded-b-[40px] overflow-hidden'>
-        <LandingPageHeaderLogo className='hidden 2xl:flex' />
+    <HeaderWrapper type='default'>
+      <div className='h-[150px] shadow-lg flex bg-white [&_*]:whitespace-nowrap overflow-hidden'>
         <div className='flex flex-1 flex-col'>
           <TopSocialNav className='flex flex-wrap' />
           <MainNav />
@@ -126,39 +125,41 @@ const TopSocialNav = ({
   return (
     <div
       className={cn(
-        'flex items-center justify-center gap-2 2xl:justify-between bg-themePrimary [&_*]:whitespace-normal sm:whitespace-nowrap text-white min-h-[50px] py-2 px-[30px]',
+        'flex items-center justify-center gap-2 bg-themeSecondary [&_*]:whitespace-normal sm:whitespace-nowrap text-white h-auto min-h-[50px] py-2 px-[50px]',
         className
       )}
     >
-      <div className='flex__center gap-[30px]'>
-        {contacts.map(contact => (
-          <a
-            className='flex flex-row items-center gap-[10px]'
-            key={contact.label}
-            target='_blank'
-            href={contact.link || '#'}
-          >
-            <Image
-              className='h-9 w-9 aspect-square'
-              src={contact.icon}
-              alt={contact.label}
-              width={36}
-              height={36}
-            />
-            <p>
-              <span className='hidden 2xl:inline'>{contact.label}</span>
-              <span className='hidden 2xl:inline'>: &nbsp;</span>
-              <span>{contact.value}</span>
-            </p>
-          </a>
-        ))}
-      </div>
-      <div className='flex__center gap-[20px]'>
-        <div className='w-[1px] 2xl:block hidden h-6 bg-white' />
-        <span className='2xl:inline hidden'>Follow Us On:</span>
-        {socialLinks.map((socialLink, idx) => (
-          <SocialIcon key={idx} {...socialLink} />
-        ))}
+      <div className='outerContainer flex justify-center md:justify-between flex-wrap md:flex-nowrap  gap-5 items-center'>
+        <div className='flex__center flex-wrap gap-[30px]'>
+          {contacts.map(contact => (
+            <a
+              className='flex flex-row items-center gap-[10px]'
+              key={contact.label}
+              target='_blank'
+              href={contact.link || '#'}
+            >
+              <Image
+                className='h-9 w-9 aspect-square'
+                src={contact.icon}
+                alt={contact.label}
+                width={36}
+                height={36}
+              />
+              <p>
+                <span className='hidden 2xl:inline'>{contact.label}</span>
+                <span className='hidden 2xl:inline'>: &nbsp;</span>
+                <span>{contact.value}</span>
+              </p>
+            </a>
+          ))}
+        </div>
+        <div className='flex__center gap-[20px] basis-[8rem]'>
+          <div className='w-[1px] 2xl:block hidden h-6 bg-white' />
+          <span className='2xl:inline hidden'>Follow Us On:</span>
+          {socialLinks.map((socialLink, idx) => (
+            <SocialIcon key={idx} {...socialLink} />
+          ))}
+        </div>
       </div>
     </div>
   )
@@ -199,8 +200,8 @@ const MainNav = () => {
   const parsedOrderCount = toMaxNumber(orderCount, 9)
 
   return (
-    <nav className='flex__center px-[50px] flex-1'>
-      <LandingPageHeaderLogo className='flex 2xl:hidden' />
+    <nav className='flex__center outerContainer px-[50px] gap-[50px] flex-1'>
+      <HeaderLogo className='flex' />
       <ul className='hidden 2xl:flex gap-10 mr-auto text-titleColor'>
         {NavList.map((nav, idx) => (
           <li

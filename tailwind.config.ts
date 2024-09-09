@@ -21,7 +21,9 @@ const config: Config = {
         'cta-gradient':
           'linear-gradient(90deg, #000D44 0%, rgba(0, 13, 68, 0.60) 27.37%, rgba(0, 13, 68, 0.41) 40.28%, rgba(0, 13, 68, 0.00) 55.47%)',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-subtitle-gradient':
+          'linear-gradient(90deg, #04CE7855 0%, rgba(4, 206, 120, 0.00) 100%);'
       },
       boxShadow: {
         appointmentForm: '0px 0px 30px 0px rgba(2, 29, 53, 0.08)',

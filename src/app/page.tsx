@@ -1,11 +1,13 @@
 import { AboutUsSection } from '@/components/AboutUs'
 import { CommonFooter } from '@/components/Footers'
+import { LandingPageHeader } from '@/components/Headers'
 import {
   Appointments,
   Blogs,
   Cta,
   ExtraServices,
   FAQs,
+  HeroSection,
   Testimonials,
   WhyChoseUs,
   WorkProcess
@@ -14,8 +16,9 @@ import { Services } from '@/components/Services'
 
 export default function Home() {
   return (
-    <main className=''>
-      {/* <LandingPageHeader /> */}
+    <>
+      <LandingPageHeader />
+      <HeroSection />
       <Services />
       <AboutUsSection />
       <WhyChoseUs />
@@ -27,6 +30,6 @@ export default function Home() {
       <Cta />
       <Blogs />
       <CommonFooter />
-    </main>
+    </>
   )
 }

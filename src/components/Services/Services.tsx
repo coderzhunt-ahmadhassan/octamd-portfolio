@@ -21,7 +21,7 @@ export const Services = (props: Props) => {
   const handleNextService = () => setCurrentCard(prev => prev + 1)
 
   return (
-    <div className='relative'>
+    <div className='relative z-10'>
       <section className='py-[70px] border-t border-[#D8DDE1] outerContainer'>
         <BackgroundCornerImage
           position='top right'

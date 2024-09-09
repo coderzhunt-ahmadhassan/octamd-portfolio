@@ -140,4 +140,7 @@
   .font_64_700 {
     @apply text-[64px] font-bold;
   }
+  .font_84_800 {
+    @apply text-[84px] font-[800];
+  }
 }

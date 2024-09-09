@@ -8,6 +8,7 @@ import DentalTools from './rasters/dentalTools.png'
 import dummy_user from './rasters/dummy_user.png'
 import ExtraServiceCardHoverBg from './rasters/extraService_card_hover_bg.jpeg'
 import faq_woman from './rasters/faq_woman.png'
+import HeroBg from './rasters/hero_bg.png'
 import DoctorWithTooth from './rasters/services_floating_doctor_with_tooth.png'
 import ToothBrushingItself from './rasters/tooth-brushing-itself.png'
 import WcsBottomLeftBg from './rasters/wcs_bottomLeftBg.svg'
@@ -24,8 +25,10 @@ import BehanceHover from './vectors/behance-hover.svg'
 import Behance from './vectors/behance.svg'
 import Cart from './vectors/cart.svg'
 import CosmeticDentistry from './vectors/cosmetic-dentistry.svg'
+import customercare from './vectors/customercare.svg'
 import DirectingCurveArrowToRightTop from './vectors/directing_curveArrow.svg'
 import DirectingCurveArrowToRightBottom from './vectors/directing_curveArrow_bottom_toRight.svg'
+import doctor_vector from './vectors/doctor_vector.svg'
 import Email from './vectors/email-icon-rounded.svg'
 import es_cardiology from './vectors/es_cardiology.svg'
 import es_dentalCare from './vectors/es_dentalCare.svg'
@@ -43,11 +46,14 @@ import Facebook from './vectors/facebook.svg'
 import faq_bg from './vectors/faq_bg.svg'
 import GreenTooth from './vectors/green-tooth.svg'
 import Hamburger from './vectors/hamburger.svg'
+import DefaultHeaderLogo from './vectors/header_logo.svg'
+import HeroBgCutter from './vectors/hero_bg_cutter.svg'
 import InstagramHover from './vectors/instagram-hover.svg'
 import Instagram from './vectors/instagram.svg'
 import LogoDark from './vectors/logo-dark.svg'
 import OralSurgery from './vectors/oral_surgery.svg'
 import OrthodonticsService from './vectors/orthodontics_service.svg'
+import painless_treetment from './vectors/painless_treetment.svg'
 import PediatricDentistry from './vectors/pediatric_dentistry.svg'
 import PhoneNumber from './vectors/phone-icon-rounded.svg'
 import RootCanal from './vectors/root_canal.svg'
@@ -56,6 +62,7 @@ import ServicesBgVector from './vectors/services-bg-vector.svg'
 import ServicesIcon from './vectors/services_icon.svg'
 import ServicesIconPrimary from './vectors/services_icon_primary.svg'
 import testimonial_quote from './vectors/testimonial_quote.svg'
+import top_dental_treetment from './vectors/top_dental_treetment.svg'
 import TwitterHover from './vectors/twitter-hover.svg'
 import Twitter from './vectors/twitter.svg'
 import WcsTabIcon from './vectors/wcs_tab-icon.svg'
@@ -83,7 +90,10 @@ export {
   FacebookHover,
   GreenTooth,
   Hamburger,
+  DefaultHeaderLogo,
   HeartStethoscope,
+  HeroBg,
+  HeroBgCutter,
   Instagram,
   InstagramHover,
   LogoDark,
@@ -109,6 +119,8 @@ export {
   appointment_dotted_bg,
   blog_banner,
   cta_bg,
+  customercare,
+  doctor_vector,
   dummy_user,
   es_cardiology,
   es_dentalCare,
@@ -121,7 +133,9 @@ export {
   es_urologyCare,
   faq_bg,
   faq_woman,
+  painless_treetment,
   testimonial_quote,
+  top_dental_treetment,
   wp_checkups,
   wp_getReport,
   wp_ongoingCare,
