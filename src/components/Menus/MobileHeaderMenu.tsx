@@ -40,10 +40,15 @@ const NavList: { title: string; link: string }[] = [
 export function MobileHeaderMenu({ children }: Props) {
   const [open, setOpen] = useState<boolean>(false)
   const handleClose = () => setOpen(false)
-  const handleOpen = () => setOpen(true)
+  const handleToggle = () => setOpen(prev => !prev)
 
   return (
-    <GeneralMenu open={open} handleClose={handleClose} handleOpen={handleOpen} trigger={children}>
+    <GeneralMenu
+      open={open}
+      handleClose={handleClose}
+      handleToggle={handleToggle}
+      trigger={children}
+    >
       <div className='h-screen absolute top-0 right-0 bg-white w-full max-w-[30rem] py-[50px] px-4 flex flex-col'>
         <Button
           className='flex__center ml-auto 2xl:m-0 p-0 h-14 w-14'
@@ -63,7 +68,7 @@ export function MobileHeaderMenu({ children }: Props) {
           </Link>
         ))}
         <Button
-          className='hidden 2xl:flex uppercase rounded-[10rem] text-sm h-14 w-[200px]'
+          className='flex uppercase rounded-[10rem] text-sm h-14 w-full mt-8'
           variant='secondary'
         >
           Appointment now

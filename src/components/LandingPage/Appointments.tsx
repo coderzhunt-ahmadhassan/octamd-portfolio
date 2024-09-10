@@ -6,8 +6,11 @@ import { Button, Input } from '@/components/ui'
 import { FaAngleDown, FaRegCalendar, FaRegClock, FaRegUser } from 'react-icons/fa6'
 import { GoMail } from 'react-icons/go'
 import { FiPhone } from 'react-icons/fi'
+import { cn } from '@/lib/utils'
 
-type Props = {}
+type Props = {
+  currentPage?: 'landingPage' | 'other'
+}
 
 const timings: string[][] = [
   ['Monday - Tuesday:', '9am - 6pm'],
@@ -17,11 +20,15 @@ const timings: string[][] = [
   ['Sunday:', 'Colsed']
 ]
 
-export const Appointments = (props: Props) => {
+export const Appointments = ({ currentPage = 'other' }: Props) => {
   return (
     <SectionWrapper
       className='py-6'
-      innerContainerClassName='appointmentContainer flex flex-col xl:flex-row gap-[30px]'
+      innerContainerClassName={cn(
+        ' flex flex-col xl:flex-row gap-[30px]',
+        currentPage === 'landingPage' && 'appointmentContainer'
+      )}
+      outerContainerClassName={cn('', currentPage === 'other' && 'px-0')}
     >
       <div className='flex justify-center xl:justify-end relative z-10 py-10 px-0 md:px-10 xl:px-0 w-full xl:w-[430px]'>
         <div className='rounded-[20px] absolute top-0 left-0 w-full xl:w-[292px] h-4/5 xl:h-full -z-[1] border-[3px] border-[#D8DDE1]'>

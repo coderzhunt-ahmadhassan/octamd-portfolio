@@ -57,7 +57,7 @@ const BlogCard = ({ title, slug }: Partial<BlogType>) => {
         width={483}
         alt={title ?? 'Untitled Blog Banner'}
       />
-      <div className='flex gap-2 sm:gap-[20px] flex-col sm:flex-row'>
+      <div className='flex gap-2 sm:gap-5 flex-col sm:flex-row'>
         <p className='flex items-center gap-1 whitespace-nowrap'>
           <FaRegUser className='text-themePrimary' />
           &nbsp;

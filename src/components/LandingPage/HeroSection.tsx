@@ -66,7 +66,7 @@ export function HeroSection({}: Props) {
         <div className='absolute outerContainer inset-0 w-full h-full flex flex-col items-center justify-center lg:items-start'>
           <div className='innerContainer flex flex-col relative bottom-[8rem] items-start'>
             <div className='max-w-[39rem] flex flex-col gap-10'>
-              <div className='flex items-center gap-[20px] px-4 py-[10px] rounded-full bg-hero-subtitle-gradient'>
+              <div className='flex items-center gap-5 px-4 py-[10px] rounded-full bg-hero-subtitle-gradient'>
                 <span className='uppercase outfit font_18_600 text-white'>professional</span>
                 <span className='block w-[50px] border-t border-themePrimary'></span>
                 <span className='uppercase outfit font_18_600 text-white'>Dentist</span>

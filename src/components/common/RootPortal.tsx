@@ -8,16 +8,15 @@ type Props = {
   level?: 1 | 2 | 3 | 4 | 5
 }
 
-export default function RootPortal({ children, level = 1 }: Props) {
+export function RootPortal({ children, level = 1 }: Props) {
   const [portalRoot, setPortalRoot] = useState<HTMLElement | null>(null)
 
-  const id = `modal-level-${level}`
-
   useEffect(() => {
+    const id = `modal-level-${level}`
     const existingRoot = document.getElementById(id)
     if (!existingRoot) {
       const root = document.createElement('div')
-      root.id = 'mobile-header-drawer-root'
+      root.id = id
       document.body.appendChild(root)
       setPortalRoot(root)
     } else {

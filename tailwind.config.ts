@@ -23,11 +23,18 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-subtitle-gradient':
-          'linear-gradient(90deg, #04CE7855 0%, rgba(4, 206, 120, 0.00) 100%);'
+          'linear-gradient(90deg, #04CE7855 0%, rgba(4, 206, 120, 0.00) 100%);',
+        'green-radial-border':
+          'radial-gradient(50% 50% at 50% 50%, #04CE78 56.77%, rgba(4, 206, 120, 0.00) 100%)',
+        'blue-radial-border':
+          'radial-gradient(50% 50% at 50% 50%, #1F5FFF 56.77%, rgba(31, 95, 255, 0.00) 100%)'
       },
       boxShadow: {
         appointmentForm: '0px 0px 30px 0px rgba(2, 29, 53, 0.08)',
-        blogCard: '0px 10px 30px 0px rgba(0, 0, 0, 0.04)'
+        blogCard: '0px 10px 30px 0px rgba(0, 0, 0, 0.04)',
+        headerShadow: '0px 10px 20px 0px rgba(2, 29, 53, 0.06)',
+        cardShadow: '0px 6px 30px 0px rgba(0, 0, 0, 0.06)',
+        buttonShadow: '0px 2px 4px 0px rgba(2, 29, 53, 0.10)'
       },
       borderColor: {
         outline: '#D8DDE1'

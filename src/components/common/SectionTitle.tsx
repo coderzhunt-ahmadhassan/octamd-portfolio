@@ -28,7 +28,7 @@ export const SectionTitle = ({ image, title, className, heading }: Props) => {
       {heading && (
         <h2
           className={twMerge(
-            'urbanist font_48_700 text-center mt-[15px] lg:text-left',
+            'urbanist font_48_700 text-center mt-[15px] lg:text-left text-titleColor',
             heading?.className
           )}
         >

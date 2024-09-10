@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui'
+import { cn } from '@/lib/utils'
 import { ReactNode } from 'react'
 
 export interface AccordionItemType {
@@ -10,21 +11,44 @@ export interface AccordionItemType {
 interface Props {
   items: AccordionItemType[]
   className?: string
+  type?: 'single' | 'multiple'
+  itemsClassName?: string
 }
 
-export function CustomAccordion({ items }: Props) {
+export function CustomAccordion({ items, className, type = 'single', itemsClassName }: Props) {
   const accordionItems = items.map((accordion, idx) => {
     const { value, trigger, content } = accordion
     return (
-      <AccordionItem className='bg-white rounded-[20px] w-full' key={value} value={value}>
+      <AccordionItem
+        className={cn('bg-white rounded-[20px] w-full', itemsClassName)}
+        key={value}
+        value={value}
+      >
         <AccordionTrigger className='w-full py-[30px] px-[30px] '>{trigger}</AccordionTrigger>
         <AccordionContent className='w-full pb-[30px] px-[30px]'>{content}</AccordionContent>
       </AccordionItem>
     )
   })
   return (
-    <Accordion type='single' defaultValue='01' className='w-full flex flex-col gap-6'>
-      {accordionItems}
-    </Accordion>
+    <>
+      {type === 'single' && (
+        <Accordion
+          type='single'
+          defaultValue='01'
+          className={cn('w-full flex flex-col gap-6', className)}
+        >
+          {accordionItems}
+        </Accordion>
+      )}
+      {type === 'multiple' && (
+        <Accordion
+          type='multiple'
+          defaultValue={['01']}
+          className={cn('w-full flex flex-col gap-6', className)}
+        >
+          {accordionItems}
+        </Accordion>
+      )}
+    </>
   )
 }

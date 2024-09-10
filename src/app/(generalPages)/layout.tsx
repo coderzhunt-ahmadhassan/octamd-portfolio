@@ -11,7 +11,7 @@ const layout = ({ children }: Props) => {
   return (
     <main className='min-h-screen flex flex-col'>
       <Header />
-      <SectionWrapper className='flex-1'>{children}</SectionWrapper>
+      <div className='flex-1'>{children}</div>
       <CommonFooter />
     </main>
   )

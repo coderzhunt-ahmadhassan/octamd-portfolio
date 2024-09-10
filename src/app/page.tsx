@@ -24,10 +24,10 @@ export default function Home() {
       <WhyChoseUs />
       <ExtraServices />
       <WorkProcess />
-      <Appointments />
+      <Appointments currentPage='landingPage' />
       <Testimonials />
       <FAQs />
-      <Cta />
+      <Cta currentPage='landingPage' />
       <Blogs />
       <CommonFooter />
     </>

@@ -3,13 +3,23 @@ import { SectionWrapper } from '@/components/common'
 import Image from 'next/image'
 import { cta_bg } from '@/assets'
 import { Button } from '@/components/ui'
+import { cn } from '@/lib/utils'
 
-type Props = {}
+type Props = {
+  currentPage?: 'landingPage' | 'other'
+  className?: string
+}
 
-export function Cta({}: Props) {
+export function Cta({ currentPage = 'other', className }: Props) {
   return (
     <SectionWrapper
-      bgProps={<div className='absolute top-1/2 left-0 w-full h-full bg-[#F5F8FD] p-4'></div>}
+      className={cn('', className)}
+      bgProps={
+        currentPage === 'landingPage' && (
+          <div className='absolute top-1/2 left-0 w-full h-full bg-[#F5F8FD] p-4'></div>
+        )
+      }
+      outerContainerClassName={cn(currentPage === 'landingPage' ? '' : 'px-0')}
     >
       <div className='w-full rounded-[20px] relative h-auto min-h-[422px] [&_*]:pointer-events-none overflow-hidden'>
         <Image

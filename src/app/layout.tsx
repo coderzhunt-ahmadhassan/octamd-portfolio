@@ -14,12 +14,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <div className='z-[1] relative'>{children}</div>
-        <div id='modal-level-1' className='z-[2] relative' />
-        <div id='modal-level-2' className='z-[3] relative' />
-        <div id='modal-level-3' className='z-[4] relative' />
-        <div id='modal-level-4' className='z-[5] relative' />
-        <div id='modal-level-5' className='z-[6] relative' />
+        <div id='modal-level-1' className='!z-[2] fixed top-0 left-0' />
+        <div id='modal-level-2' className='!z-[3] fixed top-0 left-0' />
+        <div id='modal-level-3' className='!z-[4] fixed top-0 left-0' />
+        <div id='modal-level-4' className='!z-[5] fixed top-0 left-0' />
+        <div id='modal-level-5' className='!z-[6] fixed top-0 left-0' />
+        <div className='!z-[1] relative'>{children}</div>
       </body>
     </html>
   )

@@ -107,7 +107,7 @@ const NavList: { title: string; link: string }[] = [
 export const Header = (props: Props) => {
   return (
     <HeaderWrapper type='default'>
-      <div className='h-[150px] shadow-lg flex bg-white [&_*]:whitespace-nowrap overflow-hidden'>
+      <div className='h-[150px] shadow-headerShadow flex bg-white [&_*]:whitespace-nowrap overflow-hidden'>
         <div className='flex flex-1 flex-col'>
           <TopSocialNav className='flex flex-wrap' />
           <MainNav />
@@ -153,7 +153,7 @@ const TopSocialNav = ({
             </a>
           ))}
         </div>
-        <div className='flex__center gap-[20px] basis-[8rem]'>
+        <div className='flex__center gap-5 basis-[8rem]'>
           <div className='w-[1px] 2xl:block hidden h-6 bg-white' />
           <span className='2xl:inline hidden'>Follow Us On:</span>
           {socialLinks.map((socialLink, idx) => (
@@ -170,7 +170,7 @@ const SocialIcon = ({ icon, hoverIcon, link }: SocialIconType) => {
     <a
       href={link ?? '#'}
       target={link != null ? '_blank' : '_self'}
-      className='[&_.activeImage]:block [&_.hoverImage]:hidden [&:hover_.activeImage]:hidden [&:hover_.hoverImage]:block'
+      className='[&_.activeImage]:block w-[14px] h-[14px] aspect-square [&_.hoverImage]:hidden [&:hover_.activeImage]:hidden [&:hover_.hoverImage]:block'
     >
       <Image
         className='h-[14px] w-[14px] aspect-square activeImage'

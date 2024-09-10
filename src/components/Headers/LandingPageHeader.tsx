@@ -107,7 +107,7 @@ const NavList: { title: string; link: string }[] = [
 export const LandingPageHeader = (props: Props) => {
   return (
     <HeaderWrapper type='landingPage'>
-      <div className='h-[150px] shadow-lg flex bg-white [&_*]:whitespace-nowrap rounded-none md:rounded-b-[40px] overflow-hidden'>
+      <div className='h-[150px] shadow-headerShadow flex bg-white [&_*]:whitespace-nowrap rounded-none md:rounded-b-[40px] overflow-hidden'>
         <LandingPageHeaderLogo className='hidden 2xl:flex' />
         <div className='flex flex-1 flex-col'>
           <TopSocialNav className='flex flex-wrap' />
@@ -153,7 +153,7 @@ const TopSocialNav = ({
           </a>
         ))}
       </div>
-      <div className='flex__center gap-[20px]'>
+      <div className='flex__center gap-5'>
         <div className='w-[1px] 2xl:block hidden h-6 bg-white' />
         <span className='2xl:inline hidden'>Follow Us On:</span>
         {socialLinks.map((socialLink, idx) => (
@@ -199,9 +199,9 @@ const MainNav = () => {
   const parsedOrderCount = toMaxNumber(orderCount, 9)
 
   return (
-    <nav className='flex__center px-[50px] flex-1'>
+    <nav className='flex__center pr-[30px] flex-1'>
       <LandingPageHeaderLogo className='flex 2xl:hidden' />
-      <ul className='hidden 2xl:flex gap-10 mr-auto text-titleColor'>
+      <ul className='hidden 2xl:flex gap-10 ml-[30px] mr-auto text-titleColor'>
         {NavList.map((nav, idx) => (
           <li
             key={idx}

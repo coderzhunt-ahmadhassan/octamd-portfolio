@@ -17,10 +17,18 @@ import {
 import Image from 'next/image'
 import { Button } from '@/components/ui'
 import Link from 'next/link'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 type Props = {}
 
-const extraServices = [
+interface Service {
+  title: string
+  doctorsCount: number
+  image: string | StaticImport
+  slug: string
+}
+
+const extraServices: Service[] = [
   {
     title: 'Internal Medicine',
     doctorsCount: 32,
@@ -91,49 +99,7 @@ export const ExtraServices = (props: Props) => {
       <div className='outerContainer pt-[128px] pb-[94px]'>
         <div className='innerContainer grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
           {extraServices.map(service => {
-            const { title, image, slug, doctorsCount } = service
-            const doctorsCountRoundFigure =
-              Math.trunc(doctorsCount / 10) * 10 + (doctorsCount % 10 > 0 ? '+' : '')
-            return (
-              <div
-                key={title}
-                className='bg-white group/card rounded-[20px] overflow-hidden relative shadow-md py-[30px] px-4 flex justify-between items-center flex-col h-[287px]'
-              >
-                <Image
-                  className='absolute block group-hover/card:hidden z-10 bottom-0 left-1/2 object-cover h-[calc(120%)]'
-                  src={ExtraServiceCardBg}
-                  alt='card bg'
-                  width={520}
-                  height={382}
-                />
-                <div className='absolute hidden [&_*]:pointer-events-none pointer-events-none group-hover/card:block z-10 top-0 left-0 h-full w-full'>
-                  <Image
-                    className='absolute top-0 left-0 h-[calc(130%)] w-full object-cover'
-                    src={ExtraServiceCardHoverBg}
-                    alt='card hover bg'
-                    width={520}
-                    height={382}
-                  />
-                  <div className='absolute top-0 left-0 w-full h-full bg-[#000D44] opacity-80'></div>
-                </div>
-
-                <div className='flex__center relative rounded-full z-10 bg-[#E6E9EE] group-hover/card:bg-themePrimary h-[80px] w-[80px] aspect-square'>
-                  <Image src={image} height={50} width={50} alt={title} />
-                </div>
-                <div className='flex__center flex-col z-10'>
-                  <h4 className='urbanist font_24_700 group-hover/card:text-white'>{title}</h4>
-                  <p className='text-[#788094] urbanist font_14_400'>
-                    {doctorsCountRoundFigure} Doctors
-                  </p>
-                </div>
-                <Button
-                  variant={'outline'}
-                  className='border-themePrimary rounded-[30px] z-10 group-hover/card:bg-themePrimary group-hover/card:text-white text-themePrimary uppercase dmSans font_14_700 h-[46px] w-[151px] duration-0'
-                >
-                  Read more
-                </Button>
-              </div>
-            )
+            return <ServiceCard key={service.title} service={service} />
           })}
         </div>
         <div className='innerContainer flex__center mt-[60px]'>
@@ -150,6 +116,47 @@ export const ExtraServices = (props: Props) => {
           <div className='border-t border-[#D8DDE1] flex-1 h-0'></div>
         </div>
       </div>
+    </div>
+  )
+}
+
+export const ServiceCard = ({ service }: { service: Service }) => {
+  const { title, image, slug, doctorsCount } = service
+  const doctorsCountRoundFigure =
+    Math.trunc(doctorsCount / 10) * 10 + (doctorsCount % 10 > 0 ? '+' : '')
+  return (
+    <div className='bg-white group/card rounded-[20px] overflow-hidden relative shadow-cardShadow py-[30px] px-4 flex justify-between items-center flex-col h-[287px]'>
+      <Image
+        className='absolute block group-hover/card:hidden z-10 bottom-0 left-1/2 object-cover h-[calc(120%)]'
+        src={ExtraServiceCardBg}
+        alt='card bg'
+        width={520}
+        height={382}
+      />
+      <div className='absolute hidden [&_*]:pointer-events-none pointer-events-none group-hover/card:block z-10 top-0 left-0 h-full w-full'>
+        <Image
+          className='absolute top-0 left-0 h-[calc(130%)] w-full object-cover'
+          src={ExtraServiceCardHoverBg}
+          alt='card hover bg'
+          width={520}
+          height={382}
+        />
+        <div className='absolute top-0 left-0 w-full h-full bg-[#000D44] opacity-80'></div>
+      </div>
+
+      <div className='flex__center relative rounded-full z-10 bg-[#E6E9EE] group-hover/card:bg-themePrimary h-[80px] w-[80px] aspect-square'>
+        <Image src={image} height={50} width={50} alt={title} />
+      </div>
+      <div className='flex__center flex-col z-10'>
+        <h4 className='urbanist font_24_700 group-hover/card:text-white'>{title}</h4>
+        <p className='text-[#788094] urbanist font_14_400'>{doctorsCountRoundFigure} Doctors</p>
+      </div>
+      <Button
+        variant={'outline'}
+        className='border-themePrimary rounded-[30px] z-10 group-hover/card:bg-themePrimary group-hover/card:text-white text-themePrimary uppercase dmSans font_14_700 h-[46px] w-[151px] duration-0'
+      >
+        Read more
+      </Button>
     </div>
   )
 }
