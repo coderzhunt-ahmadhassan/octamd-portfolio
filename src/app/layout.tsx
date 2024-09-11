@@ -1,5 +1,25 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Urbanist, DM_Sans, Outfit } from 'next/font/google'
+
+export const urbanist_init = Urbanist({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-urbanist',
+  display: 'swap'
+})
+export const dmSans_init = DM_Sans({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-dm_sans',
+  display: 'swap'
+})
+export const outfit_init = Outfit({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-outfit',
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>
+      <body className={`${urbanist_init.variable} ${outfit_init.variable} ${dmSans_init.variable}`}>
         <div id='modal-level-1' className='!z-[2] fixed top-0 left-0' />
         <div id='modal-level-2' className='!z-[3] fixed top-0 left-0' />
         <div id='modal-level-3' className='!z-[4] fixed top-0 left-0' />

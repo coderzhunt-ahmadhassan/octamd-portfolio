@@ -46,7 +46,7 @@ const layout = ({ children }: Props) => {
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 py-[66px]'>
         <div className='col-span-1 order-2 lg:order-1 lg:col-span-2'>{children}</div>
         <div className='relative order-1 lg:order-1'>
-          <div className='lg:sticky lg:top-[66px] lg:left-0 flex flex-col gap-10'>
+          <div className='lg:sticky lg:top-[13rem] lg:left-0 flex flex-col gap-10'>
             <div className='bg-[#F5F7FA] p-5 order-2 lg:order-1 md:p-10 w-full rounded-[20px]'>
               <h3 className='text-titleColor outfit font_24_600'>Categories</h3>
               <div className='mt-[21px] relative h-[3px] w-full overflow-hidden rounded-full bg-[#D8DDE1]'>

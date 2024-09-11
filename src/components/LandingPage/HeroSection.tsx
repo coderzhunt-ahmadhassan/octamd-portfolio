@@ -128,7 +128,7 @@ export function HeroSection({}: Props) {
         </div>
       </SectionWrapper>
       <SectionWrapper>
-        <div className='bg-white px-[3rem] py-[5rem] min-h-[265px] grid lg:hidden grid-cols-1 md:grid-cols-2 w-full xl:flex xl:justify-between gap-4 xl:items-center max-w-[1552px] relative top-0 left-0 border-0'>
+        <div className='bg-white px-[3rem] py-[5rem] min-h-[265px] grid lg:hidden xl:hidden grid-cols-1 md:grid-cols-2 w-full xl:justify-between gap-4 xl:items-center max-w-[1552px] relative top-0 left-0 border-0'>
           {data.map(element => {
             return <Feature key={element.title} {...element} />
           })}

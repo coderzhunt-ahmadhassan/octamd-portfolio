@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Outfit:wght@100..900&family=Urbanist:wght@100..900&display=swap');
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -90,13 +88,13 @@
     @apply relative top-0 left-0 pointer-events-auto opacity-100;
   }
   .urbanist {
-    @apply !font-['Urbanist',sans-serif];
+    @apply font-[var(--font-urbanist)];
   }
   .dmSans {
-    @apply !font-['DM_Sans',sans-serif];
+    @apply font-[var(--font-dm_sans)];
   }
   .outfit {
-    @apply !font-['Outfit',sans-serif];
+    @apply font-[var(--font-outfit)];
   }
   .font_14_400 {
     @apply text-sm font-normal;
