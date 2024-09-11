@@ -30,7 +30,7 @@ export function BlogPost({ banner, author, date, comments, title, desc, slug }: 
         />
       )}
       <div className='p-10'>
-        <div className='flex flex-wrap justify-start items-center gap-5 dmSans font_14_400 text-[#788094]'>
+        <div className='flex flex-wrap justify-start items-center gap-5 font-dm_sans font_14_400 text-[#788094]'>
           <div className='flex items-center justify-start gap-2'>
             <FaRegUser className='text-themePrimary w-4 h-4' />
             <span>By {author}</span>
@@ -46,11 +46,11 @@ export function BlogPost({ banner, author, date, comments, title, desc, slug }: 
             <span>{formatNumber(comments)} Comments</span>
           </div>
         </div>
-        <h2 className='urbanist font_30_700 text-titleColor mt-4'>{title}</h2>
-        <p className='text-[#788094] urbanist font_14_400 mt-6 mb-10'>{desc}</p>
+        <h2 className='font-urbanist font_30_700 text-titleColor mt-4'>{title}</h2>
+        <p className='text-[#788094] font-urbanist font_14_400 mt-6 mb-10'>{desc}</p>
         <Link className='rounded-full' href={`/blog/${slug}`}>
           <Button
-            className='rounded-full text-[#788094] px-8 uppercase h-[46px] dmSans font_14_700'
+            className='rounded-full text-[#788094] px-8 uppercase h-[46px] font-dm_sans font_14_700'
             variant={'outline'}
           >
             Read More

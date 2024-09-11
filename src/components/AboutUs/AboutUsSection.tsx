@@ -83,28 +83,28 @@ export const AboutUsSection = (props: Props) => {
                   <span className='text-titleColor'>9k</span>
                   <span className='text-themePrimary'>+</span>
                 </p>
-                <p className='urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
+                <p className='font-urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
               </div>
               <div className='border-b-2 border-themeTertiary flex__center flex-col p-10'>
                 <p className='font_64_700 leading-[52px]'>
                   <span className='text-titleColor'>9k</span>
                   <span className='text-themePrimary'>+</span>
                 </p>
-                <p className='urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
+                <p className='font-urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
               </div>
               <div className='border-r-2 border-themeTertiary flex__center flex-col p-10'>
                 <p className='font_64_700 leading-[52px]'>
                   <span className='text-titleColor'>9k</span>
                   <span className='text-themePrimary'>+</span>
                 </p>
-                <p className='urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
+                <p className='font-urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
               </div>
               <div className='flex__center flex-col p-10'>
                 <p className='font_64_700 leading-[52px]'>
                   <span className='text-titleColor'>9k</span>
                   <span className='text-themePrimary'>+</span>
                 </p>
-                <p className='urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
+                <p className='font-urbanist font_16_400 text-[#788094]'>Satisfied Patients</p>
               </div>
             </div>
           </div>

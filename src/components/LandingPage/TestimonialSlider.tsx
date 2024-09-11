@@ -158,7 +158,7 @@ const Testimonial = ({ review: { description, stars }, user }: TestimonialType) 
   return (
     <TestimonialWrapper>
       <StarsReview stars={stars} />
-      <p className='urbanist font_16_400 text-[#788094]'>{description}</p>
+      <p className='font-urbanist font_16_400 text-[#788094]'>{description}</p>
       <UserBox {...user} />
     </TestimonialWrapper>
   )
@@ -242,8 +242,8 @@ const UserBox = ({ image, name, profession }: TestimonialType['user']) => {
         width={56}
       />
       <div className='flex flex-col'>
-        <h5 className='urbanist font_20_700 text-titleColor'>{name}</h5>
-        <h6 className='urbanist font_14_400 text-[#788094]'>{profession}</h6>
+        <h5 className='font-urbanist font_20_700 text-titleColor'>{name}</h5>
+        <h6 className='font-urbanist font_14_400 text-[#788094]'>{profession}</h6>
       </div>
     </div>
   )

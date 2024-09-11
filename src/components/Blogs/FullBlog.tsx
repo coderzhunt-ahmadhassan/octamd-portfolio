@@ -70,7 +70,7 @@ export function FullBlog({}: Props) {
         />
 
         <div className='p-10'>
-          <div className='flex flex-wrap justify-start items-center gap-5 dmSans font_14_400 text-[#788094]'>
+          <div className='flex flex-wrap justify-start items-center gap-5 font-dm_sans font_14_400 text-[#788094]'>
             <div className='flex items-center justify-start gap-2'>
               <FaRegUser className='text-themePrimary w-4 h-4' />
               <span>By {author}</span>
@@ -86,13 +86,13 @@ export function FullBlog({}: Props) {
               <span>{formatNumber(comments)} Comments</span>
             </div>
           </div>
-          <h2 className='urbanist font_30_700 text-titleColor mt-4'>{title}</h2>
-          <p className='text-[#788094] urbanist font_14_400 my-10'>
+          <h2 className='font-urbanist font_30_700 text-titleColor mt-4'>{title}</h2>
+          <p className='text-[#788094] font-urbanist font_14_400 my-10'>
             We offer flexible appointment scheduling options to accommodate your busy lifestyle.
             Whether you prefer to book in advance or need a same-day appointment, we strive to make
             the process as seamless as possible
           </p>
-          <p className='text-[#788094] urbanist font_14_400'>
+          <p className='text-[#788094] font-urbanist font_14_400'>
             Especially in light of the ongoing COVID-19 pandemic, we maintain rigorous safety
             protocols and hygiene standards to ensure the well-being of our patients and staff. Your
             health and safety are our utmost priority.
@@ -103,7 +103,7 @@ export function FullBlog({}: Props) {
             </div>
             <div className='absolute rounded-l-lg top-full overflow-hidden -translate-y-1/2'>
               <div className='absolute origin-top-right top-0 right-0 h-screen w-screen bg-themePrimary -skew-x-[35deg]' />
-              <span className='relative urbanist font_20_700 p-[10px_50px_10px_20px] text-white'>
+              <span className='relative font-urbanist font_20_700 p-[10px_50px_10px_20px] text-white'>
                 Michel Clarck
               </span>
             </div>
@@ -128,37 +128,37 @@ export function FullBlog({}: Props) {
               width={341}
             />
           </div>
-          <h2 className='urbanist font_30_700 text-titleColor mt-10'>
+          <h2 className='font-urbanist font_30_700 text-titleColor mt-10'>
             The medical experts transplant the heart
           </h2>
-          <p className='text-[#788094] urbanist font_14_400 mt-10'>
+          <p className='text-[#788094] font-urbanist font_14_400 mt-10'>
             Our clinic is equipped with modern facilities and advanced medical technology to ensure
             accurate diagnoses and effective treatments. This enables us to provide you with the
             highest standard of care.
           </p>
           <ul className='flex flex-col mt-10 gap-5'>
-            <li className='urbanist font_16_400 text-[#788094] flex gap-[14px]'>
+            <li className='font-urbanist font_16_400 text-[#788094] flex gap-[14px]'>
               <FaCircleCheck className='text-themePrimary aspect-square w-5 h-5 relative top-1' />
               <span className='flex-1'>General Consulting</span>
             </li>
-            <li className='urbanist font_16_400 text-[#788094] flex gap-[14px]'>
+            <li className='font-urbanist font_16_400 text-[#788094] flex gap-[14px]'>
               <FaCircleCheck className='text-themePrimary aspect-square w-5 h-5 relative top-1' />
               <span className='flex-1'>Construction Management</span>
             </li>
-            <li className='urbanist font_16_400 text-[#788094] flex gap-[14px]'>
+            <li className='font-urbanist font_16_400 text-[#788094] flex gap-[14px]'>
               <FaCircleCheck className='text-themePrimary aspect-square w-5 h-5 relative top-1' />
               <span className='flex-1'>Modeling & Algorithm</span>
             </li>
-            <li className='urbanist font_16_400 text-[#788094] flex gap-[14px]'>
+            <li className='font-urbanist font_16_400 text-[#788094] flex gap-[14px]'>
               <FaCircleCheck className='text-themePrimary aspect-square w-5 h-5 relative top-1' />
               <span className='flex-1'>Better Decision Making</span>
             </li>
-            <li className='urbanist font_16_400 text-[#788094] flex gap-[14px]'>
+            <li className='font-urbanist font_16_400 text-[#788094] flex gap-[14px]'>
               <FaCircleCheck className='text-themePrimary aspect-square w-5 h-5 relative top-1' />
               <span className='flex-1'>Professional Consulting Services</span>
             </li>
           </ul>
-          <p className='text-[#788094] urbanist font_14_400 mt-10'>
+          <p className='text-[#788094] font-urbanist font_14_400 mt-10'>
             From primary care and pediatrics to specialized services like dermatology, orthopedics,
             and women&apos;s health, we offer a wide spectrum of medical services under one roof.
           </p>
@@ -168,14 +168,14 @@ export function FullBlog({}: Props) {
               <div className='flex flex-wrap gap-[14px]'>
                 <Button
                   className={cn(
-                    'flex justify-between items-center h-10 border-none rounded-sm px-4 bg-[#F5F7FA] shadow-buttonShadow dmSans font_14_400 text-[#788094] hover:bg-themePrimary hover:text-white'
+                    'flex justify-between items-center h-10 border-none rounded-sm px-4 bg-[#F5F7FA] shadow-buttonShadow font-dm_sans font_14_400 text-[#788094] hover:bg-themePrimary hover:text-white'
                   )}
                 >
                   <span>Medical</span>
                 </Button>
                 <Button
                   className={cn(
-                    'flex justify-between items-center h-10 border-none rounded-sm px-4 bg-[#F5F7FA] shadow-buttonShadow dmSans font_14_400 text-[#788094] hover:bg-themePrimary hover:text-white'
+                    'flex justify-between items-center h-10 border-none rounded-sm px-4 bg-[#F5F7FA] shadow-buttonShadow font-dm_sans font_14_400 text-[#788094] hover:bg-themePrimary hover:text-white'
                   )}
                 >
                   <span>Renovations</span>
@@ -213,7 +213,7 @@ export function FullBlog({}: Props) {
       <div className='flex flex-col p-10 overflow-hidden rounded-[20px] shadow-cardShadow'>
         <div className='flex items-center justify-start gap-4'>
           <FaRegComments className='text-themePrimary text-[2rem] relative top-2' />
-          <h2 className='urbanist font_30_700 text-titleColor mt-4'>Comments ({comments})</h2>
+          <h2 className='font-urbanist font_30_700 text-titleColor mt-4'>Comments ({comments})</h2>
         </div>
         <div className=''>
           {commentsList.map(comment => {
@@ -224,16 +224,16 @@ export function FullBlog({}: Props) {
       <div className='flex flex-col p-10 overflow-hidden rounded-[20px] shadow-cardShadow'>
         <div className='flex items-center justify-start gap-4'>
           <FaReply className='text-themePrimary text-[2rem] relative top-2' />
-          <h2 className='urbanist font_30_700 text-titleColor mt-4'>Leave a Reply</h2>
+          <h2 className='font-urbanist font_30_700 text-titleColor mt-4'>Leave a Reply</h2>
         </div>
         <div className=''>
-          <p className='text-[#788094] urbanist font_14_400 mt-[30px]'>
+          <p className='text-[#788094] font-urbanist font_14_400 mt-[30px]'>
             Your email address will not be published. Required fields are marked
           </p>
           <form className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-[30px]'>
             <InputField
               className='col-span-2 lg:col-span-1 rounded-full bg-[#F5F7FA]'
-              inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
+              inputClassName='rounded-full border-none pl-6 pr-10 font-urbanist font_14_400'
               type='text'
               name='name'
               placeholder='Your Name'
@@ -243,7 +243,7 @@ export function FullBlog({}: Props) {
             />
             <InputField
               className='col-span-2 lg:col-span-1 rounded-full bg-[#F5F7FA]'
-              inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
+              inputClassName='rounded-full border-none pl-6 pr-10 font-urbanist font_14_400'
               type='email'
               placeholder='Your Name'
               name='email'
@@ -253,7 +253,7 @@ export function FullBlog({}: Props) {
             />
             <InputField
               className='col-span-2 rounded-full bg-[#F5F7FA]'
-              inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
+              inputClassName='rounded-full border-none pl-6 pr-10 font-urbanist font_14_400'
               type='text'
               placeholder='Website'
               icon={
@@ -262,7 +262,7 @@ export function FullBlog({}: Props) {
             />
             <InputField
               className='col-span-2 rounded-[30px] bg-[#F5F7FA] h-[12rem]'
-              textareaClassName='rounded-[30px] border-none pl-6 pr-10 urbanist font_14_400'
+              textareaClassName='rounded-[30px] border-none pl-6 pr-10 font-urbanist font_14_400'
               type='text'
               placeholder='Write Message...'
               name='message'
@@ -273,12 +273,12 @@ export function FullBlog({}: Props) {
             />
             <div className='col-span-2 flex justi items-center gap-4'>
               <Checkbox className='' id='terms' />
-              <label htmlFor='terms' className='text-[#788094] urbanist font_14_400 '>
+              <label htmlFor='terms' className='text-[#788094] font-urbanist font_14_400 '>
                 Save my name, email, and website in this browser for the next time I comment.
               </label>
             </div>
             <Button
-              className='rounded-full col-span-1 dmSans font_14_700 h-10 border border-themePrimary w-full hover:bg-white hover:text-themePrimary'
+              className='rounded-full col-span-1 font-dm_sans font_14_700 h-10 border border-themePrimary w-full hover:bg-white hover:text-themePrimary'
               type='submit'
               variant={'primary'}
             >

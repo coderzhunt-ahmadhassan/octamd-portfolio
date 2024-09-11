@@ -31,12 +31,12 @@ export function Cta({ currentPage = 'other', className }: Props) {
         />
         <div className='absolute bg-cta-gradient top-0 left-0 h-full w-full'></div>
         <div className='absolute flex flex-col h-full w-full gap-9 px-[61px] justify-center items-start'>
-          <h2 className='urbanist font_48_700 text-white max-w-[33rem]'>
+          <h2 className='font-urbanist font_48_700 text-white max-w-[33rem]'>
             We Are Pleased To Offer You The Healthy.
           </h2>
           <Button
             variant='secondary'
-            className='rounded-full uppercase dmSans font_14_700 h-14 w-[206px]'
+            className='rounded-full uppercase font-dm_sans font_14_700 h-14 w-[206px]'
           >
             contact us now
           </Button>

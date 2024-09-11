@@ -67,11 +67,11 @@ export function HeroSection({}: Props) {
           <div className='innerContainer flex flex-col relative bottom-[8rem] items-start'>
             <div className='max-w-[39rem] flex flex-col gap-10'>
               <div className='flex items-center gap-5 px-4 py-[10px] rounded-full bg-hero-subtitle-gradient'>
-                <span className='uppercase outfit font_18_600 text-white'>professional</span>
+                <span className='uppercase font-outfit font_18_600 text-white'>professional</span>
                 <span className='block w-[50px] border-t border-themePrimary'></span>
-                <span className='uppercase outfit font_18_600 text-white'>Dentist</span>
+                <span className='uppercase font-outfit font_18_600 text-white'>Dentist</span>
               </div>
-              <h1 className='text-white leading-[6rem] uppercase outfit font_84_800'>
+              <h1 className='text-white leading-[6rem] uppercase font-outfit font_84_800'>
                 best{' '}
                 <p className='px-4 py-1 inline border-4 relative'>
                   <span className='h-4 w-4 aspect-square bg-themePrimary hidden md:block absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2'></span>
@@ -89,7 +89,7 @@ export function HeroSection({}: Props) {
               <div className='flex gap-[30px] flex-wrap'>
                 <Link className='rounded-full inline' href='/services'>
                   <Button
-                    className='rounded-full uppercase px-10 h-14 dmSans font_14_700'
+                    className='rounded-full uppercase px-10 h-14 font-dm_sans font_14_700'
                     variant='primary'
                   >
                     View all services
@@ -97,7 +97,7 @@ export function HeroSection({}: Props) {
                 </Link>
                 <Link className='rounded-full inline' href='/contact'>
                   <Button
-                    className='rounded-full uppercase px-10 bg-transparent h-14 dmSans font_14_700'
+                    className='rounded-full uppercase px-10 bg-transparent h-14 font-dm_sans font_14_700'
                     variant='outline'
                   >
                     contact us

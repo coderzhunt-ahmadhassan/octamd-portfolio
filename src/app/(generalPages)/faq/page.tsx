@@ -77,13 +77,13 @@ const page = (props: Props) => {
         />
       </div>
       <div className='mt-[120px] mb-[50px] rounded-[30px] p-5 md:p-[60px] shadow-cardShadow'>
-        <h2 className='urbanist font_48_700 text-center mt-[15px] mb-[35px] text-titleColor'>
+        <h2 className='font-urbanist font_48_700 text-center mt-[15px] mb-[35px] text-titleColor'>
           Have Any Other Question?
         </h2>
         <form className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
           <InputField
             className='col-span-2 md:col-span-1 rounded-[30px] bg-[#F0F1F5]'
-            inputClassName='rounded-[30px] border-none pl-6 pr-10 urbanist font_14_400'
+            inputClassName='rounded-[30px] border-none pl-6 pr-10 font-urbanist font_14_400'
             type='text'
             name='name'
             placeholder='Your Name'
@@ -93,7 +93,7 @@ const page = (props: Props) => {
           />
           <InputField
             className='col-span-2 md:col-span-1 rounded-[30px] bg-[#F0F1F5]'
-            inputClassName='rounded-[30px] border-none pl-6 pr-10 urbanist font_14_400'
+            inputClassName='rounded-[30px] border-none pl-6 pr-10 font-urbanist font_14_400'
             type='email'
             placeholder='Your Email'
             name='email'
@@ -103,7 +103,7 @@ const page = (props: Props) => {
           />
           <InputField
             className='col-span-2 rounded-[30px] bg-[#F0F1F5] h-[12rem]'
-            textareaClassName='rounded-[30px] border-none pl-6 pr-10 urbanist font_14_400'
+            textareaClassName='rounded-[30px] border-none pl-6 pr-10 font-urbanist font_14_400'
             type='text'
             placeholder='Write Message...'
             name='message'
@@ -113,7 +113,7 @@ const page = (props: Props) => {
             }
           />
           <Button
-            className='rounded-[30px] col-span-2 uppercase dmSans font_14_700 h-14 border border-themePrimary w-full hover:bg-white hover:text-themePrimary'
+            className='rounded-[30px] col-span-2 uppercase font-dm_sans font_14_700 h-14 border border-themePrimary w-full hover:bg-white hover:text-themePrimary'
             type='submit'
             variant={'primary'}
           >

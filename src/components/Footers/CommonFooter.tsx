@@ -11,7 +11,7 @@ export function CommonFooter({}: Props) {
       className='bg-titleColor py-10 sm:py-3'
       innerContainerClassName='flex justify-between flex-col sm:flex-row items-center gap-y-6'
     >
-      <p className='text-white urbanist font_16_400 text-center'>
+      <p className='text-white font-urbanist font_16_400 text-center'>
         Copyright 2023{' '}
         <Link className='text-themePrimary' href={'/'}>
           Mediax

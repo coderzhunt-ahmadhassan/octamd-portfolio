@@ -65,7 +65,7 @@ export default function Layout({ children }: Props) {
         <div className='relative'>
           <div className='lg:sticky lg:top-[13rem] lg:left-0 flex flex-col gap-10'>
             <div className='bg-[#F5F7FA] p-5 order-2 lg:order-1 md:p-10 w-full rounded-[20px]'>
-              <h3 className='text-titleColor outfit font_24_600'>Categories</h3>
+              <h3 className='text-titleColor font-outfit font_24_600'>Categories</h3>
               <div className='mt-[21px] relative h-[3px] w-full overflow-hidden rounded-full bg-[#D8DDE1]'>
                 <div className='absolute bg-themePrimary w-8 h-full top-0 left-0' />
               </div>
@@ -86,7 +86,7 @@ export default function Layout({ children }: Props) {
                   return (
                     <Button
                       className={cn(
-                        'flex justify-between items-center h-14 border-none rounded-full px-8 bg-white shadow-buttonShadow urbanist font_18_600 text-titleColor hover:bg-themeSecondary/5',
+                        'flex justify-between items-center h-14 border-none rounded-full px-8 bg-white shadow-buttonShadow font-urbanist font_18_600 text-titleColor hover:bg-themeSecondary/5',
                         active &&
                           'shadow-[4px_0_0_0_#3D66F5_inset] bg-themeSecondary/5 text-themeSecondary'
                       )}
@@ -100,7 +100,7 @@ export default function Layout({ children }: Props) {
               </div>
             </div>
             <div className='bg-themeSecondary order-1 lg:order-2 rounded-[20px] w-full  px-4 md:px-[30px] py-10 text-white'>
-              <h4 className='outfit font_24_600'>Opening Hours</h4>
+              <h4 className='font-outfit font_24_600'>Opening Hours</h4>
               <div className='mt-[21px] relative h-[3px] w-full overflow-hidden rounded-full bg-[#D8DDE1]'>
                 <div className='absolute bg-themePrimary w-8 h-full top-0 left-0' />
               </div>
@@ -109,7 +109,7 @@ export default function Layout({ children }: Props) {
                   return (
                     <li
                       key={timing[0]}
-                      className='flex justify-between w-full items-center py-[26px] border-b border-white last:border-none last:pb-0 urbanist font_16_400'
+                      className='flex justify-between w-full items-center py-[26px] border-b border-white last:border-none last:pb-0 font-urbanist font_16_400'
                     >
                       <span>{timing[0]}</span>
                       <span>{timing[1]}</span>

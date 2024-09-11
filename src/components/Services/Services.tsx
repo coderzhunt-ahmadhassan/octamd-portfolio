@@ -68,9 +68,9 @@ export const Services = (props: Props) => {
           </div>
         </div>
         <ServiceSlider currentCard={currentCard} setCurrentCard={setCurrentCard} />
-        <p className='mt-[60px] bg-lightBluishGray innerContainer rounded-[30px] text-center py-[23px] urbanist font_14_400 w-full px-4'>
+        <p className='mt-[60px] bg-lightBluishGray innerContainer rounded-[30px] text-center py-[23px] font-urbanist font_14_400 w-full px-4'>
           Click any of the above services to learn more &nbsp;
-          <Link className='dmSans font_16_700 underline text-themeSecondary' href='/services'>
+          <Link className='font-dm_sans font_16_700 underline text-themeSecondary' href='/services'>
             View Our All Services
           </Link>
         </p>

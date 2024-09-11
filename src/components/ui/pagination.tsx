@@ -34,7 +34,7 @@ type PaginationLinkProps = {
 const PaginationLink = ({ className, isActive, children, ...props }: PaginationLinkProps) => (
   <Button
     className={cn(
-      'text-titleColor h-14 w-14 aspect-square rounded-[10px] hover:text-white hover:bg-themePrimary/50 dmSans font_16_400 border-none',
+      'text-titleColor h-14 w-14 aspect-square rounded-[10px] hover:text-white hover:bg-themePrimary/50 font-dm_sans font_16_400 border-none',
       isActive ? 'bg-themePrimary text-white' : 'bg-[#F5F7FA]',
       className
     )}

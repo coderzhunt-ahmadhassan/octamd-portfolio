@@ -41,8 +41,8 @@ export const Appointments = ({ currentPage = 'other' }: Props) => {
           />
         </div>
         <div className='bg-themeSecondary rounded-[20px] w-full max-w-none xl:max-w-[370px] px-4 md:px-[30px] py-10 text-white'>
-          <h4 className='urbanist font_30_700'>Working Hours</h4>
-          <p className='urbanist font_16_400 opacity-80 mt-8 mb-[14px]'>
+          <h4 className='font-urbanist font_30_700'>Working Hours</h4>
+          <p className='font-urbanist font_16_400 opacity-80 mt-8 mb-[14px]'>
             Variations of passages amt available are anything embarrassing.
           </p>
           <ul className=''>
@@ -50,7 +50,7 @@ export const Appointments = ({ currentPage = 'other' }: Props) => {
               return (
                 <li
                   key={timing[0]}
-                  className='flex justify-between w-full items-center py-[26px] border-b border-white last:border-none last:pb-0 urbanist font_16_400'
+                  className='flex justify-between w-full items-center py-[26px] border-b border-white last:border-none last:pb-0 font-urbanist font_16_400'
                 >
                   <span>{timing[0]}</span>
                   <span>{timing[1]}</span>
@@ -78,11 +78,11 @@ export const Appointments = ({ currentPage = 'other' }: Props) => {
           />
         </div>
         <div className='flex-1'>
-          <h4 className='urbanist font_30_700 text-center mb-10 '>Make An Appointment</h4>
+          <h4 className='font-urbanist font_30_700 text-center mb-10 '>Make An Appointment</h4>
           <form className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <InputField
               className='col-span-2 rounded-full bg-[#F0F1F5]'
-              inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
+              inputClassName='rounded-full border-none pl-6 pr-10 font-urbanist font_14_400'
               type='text'
               placeholder='Your Name'
               icon={
@@ -91,7 +91,7 @@ export const Appointments = ({ currentPage = 'other' }: Props) => {
             />
             <InputField
               className='col-span-2 rounded-full bg-[#F0F1F5]'
-              inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
+              inputClassName='rounded-full border-none pl-6 pr-10 font-urbanist font_14_400'
               type='text'
               placeholder='Your Name'
               icon={
@@ -100,7 +100,7 @@ export const Appointments = ({ currentPage = 'other' }: Props) => {
             />
             <InputField
               className='col-span-2 rounded-full bg-[#F0F1F5]'
-              inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
+              inputClassName='rounded-full border-none pl-6 pr-10 font-urbanist font_14_400'
               type='tel'
               placeholder='Phone Number'
               icon={
@@ -109,7 +109,7 @@ export const Appointments = ({ currentPage = 'other' }: Props) => {
             />
             <InputField
               className='col-span-2 rounded-full bg-[#F0F1F5]'
-              inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
+              inputClassName='rounded-full border-none pl-6 pr-10 font-urbanist font_14_400'
               type='text'
               placeholder='Choose Department'
               icon={
@@ -118,7 +118,7 @@ export const Appointments = ({ currentPage = 'other' }: Props) => {
             />
             <InputField
               className='col-span-2 md:col-span-1 rounded-full bg-[#F0F1F5]'
-              inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
+              inputClassName='rounded-full border-none pl-6 pr-10 font-urbanist font_14_400'
               type='date'
               placeholder='Date'
               icon={
@@ -127,7 +127,7 @@ export const Appointments = ({ currentPage = 'other' }: Props) => {
             />
             <InputField
               className='col-span-2 md:col-span-1 rounded-full bg-[#F0F1F5]'
-              inputClassName='rounded-full border-none pl-6 pr-10 urbanist font_14_400'
+              inputClassName='rounded-full border-none pl-6 pr-10 font-urbanist font_14_400'
               type='time'
               placeholder='Time'
               icon={
@@ -135,7 +135,7 @@ export const Appointments = ({ currentPage = 'other' }: Props) => {
               }
             />
             <Button
-              className='rounded-full col-span-2 dmSans font_14_700 h-10 border border-themePrimary w-full hover:bg-white hover:text-themePrimary'
+              className='rounded-full col-span-2 font-dm_sans font_14_700 h-10 border border-themePrimary w-full hover:bg-white hover:text-themePrimary'
               type='submit'
               variant={'primary'}
             >

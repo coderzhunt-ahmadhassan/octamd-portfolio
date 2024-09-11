@@ -61,7 +61,7 @@ export function MobileHeaderMenu({ children }: Props) {
           <Link
             key={title}
             href={link}
-            className='my-[10px] flex items-center justify-between urbanist font_18_400'
+            className='my-[10px] flex items-center justify-between font-urbanist font_18_400'
             onClick={handleClose}
           >
             {title}

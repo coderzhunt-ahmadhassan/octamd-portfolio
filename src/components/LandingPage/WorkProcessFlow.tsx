@@ -80,7 +80,7 @@ const FlowStep = ({
       >
         <div
           className={twMerge(
-            'h-[60px] urbanist font_24_700 text-white rounded-full absolute top-0 right-0 aspect-square w-[60px] flex__center',
+            'h-[60px] font-urbanist font_24_700 text-white rounded-full absolute top-0 right-0 aspect-square w-[60px] flex__center',
             count % 2 !== 0 && 'bg-themePrimary',
             count % 2 === 0 && 'bg-themeSecondary'
           )}
@@ -89,8 +89,8 @@ const FlowStep = ({
         </div>
         <Image src={image} alt={title} height={106} width={106} />
       </div>
-      <h6 className='urbanist font_20_700 text-titleColor'>{title}</h6>
-      <p className='urbanist font_16_400 text-[#788094]'>{desc}</p>
+      <h6 className='font-urbanist font_20_700 text-titleColor'>{title}</h6>
+      <p className='font-urbanist font_16_400 text-[#788094]'>{desc}</p>
     </div>
   )
 }

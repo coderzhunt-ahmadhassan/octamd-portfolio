@@ -40,7 +40,7 @@ export const ServiceSlider = ({ currentCard, setCurrentCard }: Props) => {
                 </div>
               </div>
               <div className={`flex-1  ${idx === currentCard ? 'smooth__hidden' : 'smooth__show'}`}>
-                <h3 className='urbanist font_24_700 absolute top-[0px] left-[75px] whitespace-normal sm:whitespace-nowrap rotate-90 origin-[left_bottom] '>
+                <h3 className='font-urbanist font_24_700 absolute top-[0px] left-[75px] whitespace-normal sm:whitespace-nowrap rotate-90 origin-[left_bottom] '>
                   {title}
                 </h3>
               </div>
@@ -50,16 +50,16 @@ export const ServiceSlider = ({ currentCard, setCurrentCard }: Props) => {
                 }`}
               >
                 <div className='p-[30px_40px]'>
-                  <h3 className='urbanist font_24_700 whitespace-normal sm:whitespace-nowrap mb-[29px]'>
+                  <h3 className='font-urbanist font_24_700 whitespace-normal sm:whitespace-nowrap mb-[29px]'>
                     {title}
                   </h3>
-                  <p className='text-[#788094] urbanist font_16_400 font-thin'>{desc}</p>
+                  <p className='text-[#788094] font-urbanist font_16_400 font-thin'>{desc}</p>
                   <ul className='list-none flex flex-col gap-[10px] font-normal mt-[30px]'>
                     {points.map(point => {
                       return (
                         <li key={point} className='flex__center gap-2'>
                           <FaCheck className='text-themePrimary' />
-                          <p className='flex-1 dmSans font_16_400'>{point}</p>
+                          <p className='flex-1 font-dm_sans font_16_400'>{point}</p>
                         </li>
                       )
                     })}

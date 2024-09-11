@@ -104,10 +104,10 @@ export const ExtraServices = (props: Props) => {
         </div>
         <div className='innerContainer flex__center mt-[60px]'>
           <div className='border-t border-[#D8DDE1] flex-1 h-0'></div>
-          <p className='border border-[#D8DDE1] flex__center flex-wrap rounded-[100px] w-full min-h-10 text-center max-w-[460px] text-[#788094] dmSans font_16_500'>
+          <p className='border border-[#D8DDE1] flex__center flex-wrap rounded-[100px] w-full min-h-10 text-center max-w-[460px] text-[#788094] font-dm_sans font_16_500'>
             You Get Our 20+ More services...&nbsp;
             <Link
-              className='dmSans inline font_16_700 underline text-themePrimary'
+              className='font-dm_sans inline font_16_700 underline text-themePrimary'
               href='/services'
             >
               Explore All Services
@@ -148,12 +148,14 @@ export const ServiceCard = ({ service }: { service: Service }) => {
         <Image src={image} height={50} width={50} alt={title} />
       </div>
       <div className='flex__center flex-col z-10'>
-        <h4 className='urbanist font_24_700 group-hover/card:text-white'>{title}</h4>
-        <p className='text-[#788094] urbanist font_14_400'>{doctorsCountRoundFigure} Doctors</p>
+        <h4 className='font-urbanist font_24_700 group-hover/card:text-white'>{title}</h4>
+        <p className='text-[#788094] font-urbanist font_14_400'>
+          {doctorsCountRoundFigure} Doctors
+        </p>
       </div>
       <Button
         variant={'outline'}
-        className='border-themePrimary rounded-[30px] z-10 group-hover/card:bg-themePrimary group-hover/card:text-white text-themePrimary uppercase dmSans font_14_700 h-[46px] w-[151px] duration-0'
+        className='border-themePrimary rounded-[30px] z-10 group-hover/card:bg-themePrimary group-hover/card:text-white text-themePrimary uppercase font-dm_sans font_14_700 h-[46px] w-[151px] duration-0'
       >
         Read more
       </Button>

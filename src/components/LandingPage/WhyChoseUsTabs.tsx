@@ -70,7 +70,7 @@ export const WhyChoseUsTabs = (props: Props) => {
                 height={40}
                 width={40}
               />
-              <p className='text-white urbanist font_18_600'>{title}</p>
+              <p className='text-white font-urbanist font_18_600'>{title}</p>
             </div>
           )
         })}
@@ -92,7 +92,7 @@ export const WhyChoseUsTabs = (props: Props) => {
                 height={40}
                 width={40}
               />
-              <p className='text-white urbanist font_18_600'>{title}</p>
+              <p className='text-white font-urbanist font_18_600'>{title}</p>
             </Button>
           )
         })}
@@ -106,10 +106,10 @@ const Tab1 = () => {
   return (
     <div className='flex flex-wrap gap-[80px]'>
       <div className='flex flex-col flex-1 basis-[225rem] md:basis-[10rem]'>
-        <h3 className='urbanist font_36_700 text-center md:text-left mx-auto md:mx-0 max-w-[29rem]'>
+        <h3 className='font-urbanist font_36_700 text-center md:text-left mx-auto md:mx-0 max-w-[29rem]'>
           Benefits by <span className='text-themePrimary'>Mediax</span> Dental Care And Clinic
         </h3>
-        <p className='urbanist font_16_400 mt-10 mb-[60px] text-center md:text-left text-[#788094]'>
+        <p className='font-urbanist font_16_400 mt-10 mb-[60px] text-center md:text-left text-[#788094]'>
           Prompt care for dental emergencies, such as toothaches, broken teeth, or knocked-out
           teeth. Specialized dental care for children. Give patients an estimate of the average wait
           time for scheduled appointments.
@@ -135,10 +135,10 @@ const Tab2 = () => {
   return (
     <div className='flex flex-wrap gap-[80px]'>
       <div className='flex flex-col flex-1 basis-[225rem] md:basis-[10rem]'>
-        <h3 className='urbanist font_36_700 text-center md:text-left mx-auto md:mx-0 max-w-[29rem]'>
+        <h3 className='font-urbanist font_36_700 text-center md:text-left mx-auto md:mx-0 max-w-[29rem]'>
           Benefits by <span className='text-themePrimary'>Mediax</span> Dental Care And Clinic
         </h3>
-        <p className='urbanist font_16_400 mt-10 mb-[60px] text-center md:text-left text-[#788094]'>
+        <p className='font-urbanist font_16_400 mt-10 mb-[60px] text-center md:text-left text-[#788094]'>
           Prompt care for dental emergencies, such as toothaches, broken teeth, or knocked-out
           teeth. Specialized dental care for children. Give patients an estimate of the average wait
           time for scheduled appointments.
@@ -164,10 +164,10 @@ const Tab3 = () => {
   return (
     <div className='flex flex-wrap gap-[80px]'>
       <div className='flex flex-col flex-1 basis-[225rem] md:basis-[10rem]'>
-        <h3 className='urbanist font_36_700 text-center md:text-left mx-auto md:mx-0 max-w-[29rem]'>
+        <h3 className='font-urbanist font_36_700 text-center md:text-left mx-auto md:mx-0 max-w-[29rem]'>
           Benefits by <span className='text-themePrimary'>Mediax</span> Dental Care And Clinic
         </h3>
-        <p className='urbanist font_16_400 mt-10 mb-[60px] text-center md:text-left text-[#788094]'>
+        <p className='font-urbanist font_16_400 mt-10 mb-[60px] text-center md:text-left text-[#788094]'>
           Prompt care for dental emergencies, such as toothaches, broken teeth, or knocked-out
           teeth. Specialized dental care for children. Give patients an estimate of the average wait
           time for scheduled appointments.

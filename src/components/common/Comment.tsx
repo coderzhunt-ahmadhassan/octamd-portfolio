@@ -34,7 +34,7 @@ export function Comment({ comment, picture, dateTime, name, replies, canReply = 
               </Button>
             )}
           </div>
-          <p className='text-[#788094] urbanist font_14_400'>{comment}</p>
+          <p className='text-[#788094] font-urbanist font_14_400'>{comment}</p>
         </div>
       </div>
       {replies && (

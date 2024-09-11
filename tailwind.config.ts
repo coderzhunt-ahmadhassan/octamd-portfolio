@@ -76,6 +76,11 @@ const config: Config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out'
+      },
+      fontFamily: {
+        dm_sans: ['var(--font-dm_sans)'],
+        outfit: ['var(--font-outfit)'],
+        urbanist: ['var(--font-urbanist)']
       }
     }
   },

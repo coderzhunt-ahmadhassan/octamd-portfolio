@@ -48,7 +48,7 @@ const layout = ({ children }: Props) => {
         <div className='relative order-1 lg:order-1'>
           <div className='lg:sticky lg:top-[13rem] lg:left-0 flex flex-col gap-10'>
             <div className='bg-[#F5F7FA] p-5 order-2 lg:order-1 md:p-10 w-full rounded-[20px]'>
-              <h3 className='text-titleColor outfit font_24_600'>Categories</h3>
+              <h3 className='text-titleColor font-outfit font_24_600'>Categories</h3>
               <div className='mt-[21px] relative h-[3px] w-full overflow-hidden rounded-full bg-[#D8DDE1]'>
                 <div className='absolute bg-themePrimary w-8 h-full top-0 left-0' />
               </div>
@@ -69,7 +69,7 @@ const layout = ({ children }: Props) => {
                   return (
                     <Button
                       className={cn(
-                        'flex justify-between items-center h-14 border-none rounded-full px-8 bg-white shadow-buttonShadow urbanist font_18_600 text-titleColor hover:bg-themeSecondary/5',
+                        'flex justify-between items-center h-14 border-none rounded-full px-8 bg-white shadow-buttonShadow font-urbanist font_18_600 text-titleColor hover:bg-themeSecondary/5',
                         active &&
                           'shadow-[4px_0_0_0_#3D66F5_inset] bg-themeSecondary/5 text-themeSecondary'
                       )}
@@ -83,7 +83,7 @@ const layout = ({ children }: Props) => {
               </div>
             </div>
             <div className='bg-[#F5F7FA] p-5 order-2 lg:order-1 md:p-10 w-full rounded-[20px]'>
-              <h3 className='text-titleColor outfit font_24_600'>Recent Posts</h3>
+              <h3 className='text-titleColor font-outfit font_24_600'>Recent Posts</h3>
               <div className='mt-[21px] relative h-[3px] w-full overflow-hidden rounded-full bg-[#D8DDE1]'>
                 <div className='absolute bg-themePrimary w-8 h-full top-0 left-0' />
               </div>
@@ -99,7 +99,7 @@ const layout = ({ children }: Props) => {
                         alt={blog.title}
                       />
                       <div className='flex flex-1 flex-col gap-4 justify-center'>
-                        <h6 className='urbanist font_18_600'>{blog.title}</h6>
+                        <h6 className='font-urbanist font_18_600'>{blog.title}</h6>
                         <div className='flex gap-2 items-center'>
                           <FaRegCalendar className='text-themePrimary' />
                           <span>{blog.date.toDateString()}</span>
@@ -111,7 +111,7 @@ const layout = ({ children }: Props) => {
               </div>
             </div>
             <div className='bg-[#F5F7FA] p-5 order-2 lg:order-1 md:p-10 w-full rounded-[20px]'>
-              <h3 className='text-titleColor outfit font_24_600'>Popular</h3>
+              <h3 className='text-titleColor font-outfit font_24_600'>Popular</h3>
               <div className='mt-[21px] relative h-[3px] w-full overflow-hidden rounded-full bg-[#D8DDE1]'>
                 <div className='absolute bg-themePrimary w-8 h-full top-0 left-0' />
               </div>
@@ -121,7 +121,7 @@ const layout = ({ children }: Props) => {
                     return (
                       <Button
                         className={cn(
-                          'flex justify-between items-center h-10 border-none rounded-sm px-4 bg-white shadow-buttonShadow dmSans font_14_400 text-[#788094] hover:bg-themePrimary hover:text-white'
+                          'flex justify-between items-center h-10 border-none rounded-sm px-4 bg-white shadow-buttonShadow font-dm_sans font_14_400 text-[#788094] hover:bg-themePrimary hover:text-white'
                         )}
                         key={category}
                       >

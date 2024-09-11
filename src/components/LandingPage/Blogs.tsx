@@ -35,7 +35,9 @@ export function Blogs({}: Props) {
           />
         </div>
         <Link href='/blog' className='rounded-full my-auto'>
-          <Button className='dmSans font_14_700 h-10 rounded-full w-[192px]'>View All Posts</Button>
+          <Button className='font-dm_sans font_14_700 h-10 rounded-full w-[192px]'>
+            View All Posts
+          </Button>
         </Link>
       </div>
       <div className='grid grid-col-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-14'>
@@ -70,13 +72,13 @@ const BlogCard = ({ title, slug }: Partial<BlogType>) => {
           <span>08 Nov, 2023</span>
         </p>
       </div>
-      <h3 className='outfit font_24_500 text-titleColor'>
+      <h3 className='font-outfit font_24_500 text-titleColor'>
         How Business Is Taking Over & What to Do About It
       </h3>
       <Link className='self-start rounded-full w-full' href={`/blog/${slug ?? ''}`}>
         <Button
           variant='outline'
-          className='rounded-full uppercase py-7 w-full text-[#788094] dmSans font_14_700'
+          className='rounded-full uppercase py-7 w-full text-[#788094] font-dm_sans font_14_700'
         >
           read more
         </Button>
